@@ -64,7 +64,7 @@ public:
          * expands the original image by a factor of two.
          */
          // min_octave设置为-1表示图像
-        int min_octave;
+        int min_octave; // @frankszn -1表示图像还是0表示图像
 
         /**
          * Sets the maximum octave. This defaults to 4 and corresponds
@@ -78,7 +78,7 @@ public:
          * The default is computed if the given threshold value is negative.
          */
          // 进行亚像素精度定位时，对极值点处的DoG值的阈值
-        float contrast_threshold;
+        float contrast_threshold; // @frankszn important
 
         /**
          * Sets the edge threshold to eliminate edge responses. The threshold
@@ -100,7 +100,7 @@ public:
          * Sets the inherent blur sigma in the input image. Default is 0.5.
          * This is a technical detail and can usually be left alone.
          */
-        float inherent_blur_sigma;
+        float inherent_blur_sigma; //@frankszn 好像没用到
 
         /**
          * Produce status messages on the console.

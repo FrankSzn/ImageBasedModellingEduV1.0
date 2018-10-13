@@ -140,12 +140,12 @@ SparseMatrix<T>::set_from_triplets (Triplets const& triplets)
     // 统计每一行 Non-zero elements 的个数
     /* Initialize outer indices with amount of inner values. */
     for (std::size_t i = 0; i < triplets.size(); ++i)
-        transposed.outer[triplets[i].row]++;
+        transposed.outer[triplets[i].row]++; // @frankszn 统计原矩阵每行的非零个数
 
     /* Convert amounts to indices with prefix sum. */
     std::size_t sum = 0;
-    std::vector<std::size_t> scratch(transposed.outer.size());
-    for (std::size_t i = 0; i < transposed.outer.size(); ++i)
+    std::vector<std::size_t> scratch(transposed.outer.size()); // @frankszn scratch here used to hold the begin indices of every line
+    for (std::size_t i = 0; i < transposed.outer.size(); ++i) //@frankszn it will iterate (this->rows + 1) times
     {
         std::size_t const temp = transposed.outer[i];
         transposed.outer[i] = sum;
@@ -159,7 +159,7 @@ SparseMatrix<T>::set_from_triplets (Triplets const& triplets)
         Triplet const& t = triplets[i];
         std::size_t pos = scratch[t.row]++;
         transposed.values[pos] = t.value;
-        transposed.inner[pos] = t.col;
+        transposed.inner[pos] = t.col; // @frankszn  inner here used to hold the col index of every value, but inner col index is not sorted
     }
 
     /* Transpose matrix, implicit sorting of inner indices. */
@@ -174,17 +174,17 @@ SparseMatrix<T>::transpose (void) const
     ret.values.resize(this->num_non_zero());
     ret.inner.resize(this->num_non_zero());
 
-    /* Compute inner sizes of transposed matrix. */
-    for(std::size_t i = 0; i < this->inner.size(); ++i)
-        ret.outer[this->inner[i]] += 1;
+    /* Compute inner sizes of transposed matrix. */ // 假设this 矩阵为rows x cols,则 ret矩阵为 cols x rows
+    for(std::size_t i = 0; i < this->inner.size(); ++i) // outer[rows+1]
+        ret.outer[this->inner[i]] += 1; //@frankszn here 这儿outer用来记录ret矩阵每一行的非零个数
 
     /* Compute outer sizes of transposed matrix with prefix sum. */
     std::size_t sum = 0;
     std::vector<std::size_t> scratch(ret.outer.size());
-    for (std::size_t i = 0; i < ret.outer.size(); ++i)
+    for (std::size_t i = 0; i < ret.outer.size(); ++i) // ret矩阵 每行
     {
         std::size_t const temp = ret.outer[i];
-        ret.outer[i] = sum;
+        ret.outer[i] = sum; // 把ret矩阵每行给连起来的向量，outer[i]表示原来的第i行在这个向量中的起始位置,用于values向量，和inner向量的位置记录
         scratch[i] = sum;
         sum += temp;
     }
