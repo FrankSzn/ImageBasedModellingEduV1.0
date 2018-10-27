@@ -246,6 +246,12 @@ class4_BINARY_DIR:STATIC=/Users/frank_szn/Documents/Robotics/MultipleView/ImageB
 class4_SOURCE_DIR:STATIC=/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/examples/task4
 
 //Value Computed by CMake
+class5_BINARY_DIR:STATIC=/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/cmake-build-debug/examples/task5
+
+//Value Computed by CMake
+class5_SOURCE_DIR:STATIC=/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/examples/task5
+
+//Value Computed by CMake
 core_BINARY_DIR:STATIC=/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/cmake-build-debug/core
 
 //Dependencies for the target

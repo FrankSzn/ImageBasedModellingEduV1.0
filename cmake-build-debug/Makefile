@@ -163,6 +163,19 @@ sfm/fast:
 .PHONY : sfm/fast
 
 #=============================================================================
+# Target rules for targets named mvs
+
+# Build rule for target.
+mvs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 mvs
+.PHONY : mvs
+
+# fast build rule for target.
+mvs/fast:
+	$(MAKE) -f mvs/CMakeFiles/mvs.dir/build.make mvs/CMakeFiles/mvs.dir/build
+.PHONY : mvs/fast
+
+#=============================================================================
 # Target rules for targets named task1_test_matching
 
 # Build rule for target.
@@ -331,6 +344,58 @@ task4_incremental_sfm/fast:
 	$(MAKE) -f examples/task4/CMakeFiles/task4_incremental_sfm.dir/build.make examples/task4/CMakeFiles/task4_incremental_sfm.dir/build
 .PHONY : task4_incremental_sfm/fast
 
+#=============================================================================
+# Target rules for targets named class5_scene2pset_single_view
+
+# Build rule for target.
+class5_scene2pset_single_view: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 class5_scene2pset_single_view
+.PHONY : class5_scene2pset_single_view
+
+# fast build rule for target.
+class5_scene2pset_single_view/fast:
+	$(MAKE) -f examples/task5/CMakeFiles/class5_scene2pset_single_view.dir/build.make examples/task5/CMakeFiles/class5_scene2pset_single_view.dir/build
+.PHONY : class5_scene2pset_single_view/fast
+
+#=============================================================================
+# Target rules for targets named task5_dmrecon_multi_views
+
+# Build rule for target.
+task5_dmrecon_multi_views: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 task5_dmrecon_multi_views
+.PHONY : task5_dmrecon_multi_views
+
+# fast build rule for target.
+task5_dmrecon_multi_views/fast:
+	$(MAKE) -f examples/task5/CMakeFiles/task5_dmrecon_multi_views.dir/build.make examples/task5/CMakeFiles/task5_dmrecon_multi_views.dir/build
+.PHONY : task5_dmrecon_multi_views/fast
+
+#=============================================================================
+# Target rules for targets named class5_scene2pset_multi_views
+
+# Build rule for target.
+class5_scene2pset_multi_views: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 class5_scene2pset_multi_views
+.PHONY : class5_scene2pset_multi_views
+
+# fast build rule for target.
+class5_scene2pset_multi_views/fast:
+	$(MAKE) -f examples/task5/CMakeFiles/class5_scene2pset_multi_views.dir/build.make examples/task5/CMakeFiles/class5_scene2pset_multi_views.dir/build
+.PHONY : class5_scene2pset_multi_views/fast
+
+#=============================================================================
+# Target rules for targets named task5_dmrecon_single_view
+
+# Build rule for target.
+task5_dmrecon_single_view: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 task5_dmrecon_single_view
+.PHONY : task5_dmrecon_single_view
+
+# fast build rule for target.
+task5_dmrecon_single_view/fast:
+	$(MAKE) -f examples/task5/CMakeFiles/task5_dmrecon_single_view.dir/build.make examples/task5/CMakeFiles/task5_dmrecon_single_view.dir/build
+.PHONY : task5_dmrecon_single_view/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -343,6 +408,7 @@ help:
 	@echo "... util"
 	@echo "... features"
 	@echo "... sfm"
+	@echo "... mvs"
 	@echo "... task1_test_matching"
 	@echo "... task1_test_features"
 	@echo "... task2_test_fundamental_8_point"
@@ -356,6 +422,10 @@ help:
 	@echo "... task3_test_p3p"
 	@echo "... task3_test_triangle"
 	@echo "... task4_incremental_sfm"
+	@echo "... class5_scene2pset_single_view"
+	@echo "... task5_dmrecon_multi_views"
+	@echo "... class5_scene2pset_multi_views"
+	@echo "... task5_dmrecon_single_view"
 .PHONY : help
 
 

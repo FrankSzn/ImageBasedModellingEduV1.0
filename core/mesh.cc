@@ -29,7 +29,7 @@ TriangleMesh::recalc_normals (bool face, bool vertex)
 
     if (face) {
         this->face_normals.clear();
-        this->face_normals.reserve(this->faces.size() / 3);
+        this->face_normals.reserve(this->faces.size() / 3); //@frankszn why devides 3
     }
 
     if (vertex) {

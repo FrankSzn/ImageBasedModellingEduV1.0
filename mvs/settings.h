@@ -44,7 +44,7 @@ struct Settings
     bool writePlyFile = false;
 
     /** Features outside the AABB are ignored. */
-    math::Vec3f aabbMin = math::Vec3f(-std::numeric_limits<float>::max());
+    math::Vec3f aabbMin = math::Vec3f(-std::numeric_limits<float>::max()); //@frankszn错了？
     math::Vec3f aabbMax = math::Vec3f(std::numeric_limits<float>::max());
 
     std::string plyPath;

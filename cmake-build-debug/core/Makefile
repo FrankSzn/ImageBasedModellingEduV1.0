@@ -206,6 +206,33 @@ camera.cc.s:
 	cd /Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/cmake-build-debug && $(MAKE) -f core/CMakeFiles/core.dir/build.make core/CMakeFiles/core.dir/camera.cc.s
 .PHONY : camera.cc.s
 
+depthmap.o: depthmap.cc.o
+
+.PHONY : depthmap.o
+
+# target to build an object file
+depthmap.cc.o:
+	cd /Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/cmake-build-debug && $(MAKE) -f core/CMakeFiles/core.dir/build.make core/CMakeFiles/core.dir/depthmap.cc.o
+.PHONY : depthmap.cc.o
+
+depthmap.i: depthmap.cc.i
+
+.PHONY : depthmap.i
+
+# target to preprocess a source file
+depthmap.cc.i:
+	cd /Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/cmake-build-debug && $(MAKE) -f core/CMakeFiles/core.dir/build.make core/CMakeFiles/core.dir/depthmap.cc.i
+.PHONY : depthmap.cc.i
+
+depthmap.s: depthmap.cc.s
+
+.PHONY : depthmap.s
+
+# target to generate assembly for a file
+depthmap.cc.s:
+	cd /Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/cmake-build-debug && $(MAKE) -f core/CMakeFiles/core.dir/build.make core/CMakeFiles/core.dir/depthmap.cc.s
+.PHONY : depthmap.cc.s
+
 image_exif.o: image_exif.cc.o
 
 .PHONY : image_exif.o
@@ -287,6 +314,276 @@ image_tools.cc.s:
 	cd /Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/cmake-build-debug && $(MAKE) -f core/CMakeFiles/core.dir/build.make core/CMakeFiles/core.dir/image_tools.cc.s
 .PHONY : image_tools.cc.s
 
+mesh.o: mesh.cc.o
+
+.PHONY : mesh.o
+
+# target to build an object file
+mesh.cc.o:
+	cd /Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/cmake-build-debug && $(MAKE) -f core/CMakeFiles/core.dir/build.make core/CMakeFiles/core.dir/mesh.cc.o
+.PHONY : mesh.cc.o
+
+mesh.i: mesh.cc.i
+
+.PHONY : mesh.i
+
+# target to preprocess a source file
+mesh.cc.i:
+	cd /Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/cmake-build-debug && $(MAKE) -f core/CMakeFiles/core.dir/build.make core/CMakeFiles/core.dir/mesh.cc.i
+.PHONY : mesh.cc.i
+
+mesh.s: mesh.cc.s
+
+.PHONY : mesh.s
+
+# target to generate assembly for a file
+mesh.cc.s:
+	cd /Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/cmake-build-debug && $(MAKE) -f core/CMakeFiles/core.dir/build.make core/CMakeFiles/core.dir/mesh.cc.s
+.PHONY : mesh.cc.s
+
+mesh_info.o: mesh_info.cc.o
+
+.PHONY : mesh_info.o
+
+# target to build an object file
+mesh_info.cc.o:
+	cd /Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/cmake-build-debug && $(MAKE) -f core/CMakeFiles/core.dir/build.make core/CMakeFiles/core.dir/mesh_info.cc.o
+.PHONY : mesh_info.cc.o
+
+mesh_info.i: mesh_info.cc.i
+
+.PHONY : mesh_info.i
+
+# target to preprocess a source file
+mesh_info.cc.i:
+	cd /Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/cmake-build-debug && $(MAKE) -f core/CMakeFiles/core.dir/build.make core/CMakeFiles/core.dir/mesh_info.cc.i
+.PHONY : mesh_info.cc.i
+
+mesh_info.s: mesh_info.cc.s
+
+.PHONY : mesh_info.s
+
+# target to generate assembly for a file
+mesh_info.cc.s:
+	cd /Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/cmake-build-debug && $(MAKE) -f core/CMakeFiles/core.dir/build.make core/CMakeFiles/core.dir/mesh_info.cc.s
+.PHONY : mesh_info.cc.s
+
+mesh_io.o: mesh_io.cc.o
+
+.PHONY : mesh_io.o
+
+# target to build an object file
+mesh_io.cc.o:
+	cd /Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/cmake-build-debug && $(MAKE) -f core/CMakeFiles/core.dir/build.make core/CMakeFiles/core.dir/mesh_io.cc.o
+.PHONY : mesh_io.cc.o
+
+mesh_io.i: mesh_io.cc.i
+
+.PHONY : mesh_io.i
+
+# target to preprocess a source file
+mesh_io.cc.i:
+	cd /Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/cmake-build-debug && $(MAKE) -f core/CMakeFiles/core.dir/build.make core/CMakeFiles/core.dir/mesh_io.cc.i
+.PHONY : mesh_io.cc.i
+
+mesh_io.s: mesh_io.cc.s
+
+.PHONY : mesh_io.s
+
+# target to generate assembly for a file
+mesh_io.cc.s:
+	cd /Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/cmake-build-debug && $(MAKE) -f core/CMakeFiles/core.dir/build.make core/CMakeFiles/core.dir/mesh_io.cc.s
+.PHONY : mesh_io.cc.s
+
+mesh_io_npts.o: mesh_io_npts.cc.o
+
+.PHONY : mesh_io_npts.o
+
+# target to build an object file
+mesh_io_npts.cc.o:
+	cd /Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/cmake-build-debug && $(MAKE) -f core/CMakeFiles/core.dir/build.make core/CMakeFiles/core.dir/mesh_io_npts.cc.o
+.PHONY : mesh_io_npts.cc.o
+
+mesh_io_npts.i: mesh_io_npts.cc.i
+
+.PHONY : mesh_io_npts.i
+
+# target to preprocess a source file
+mesh_io_npts.cc.i:
+	cd /Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/cmake-build-debug && $(MAKE) -f core/CMakeFiles/core.dir/build.make core/CMakeFiles/core.dir/mesh_io_npts.cc.i
+.PHONY : mesh_io_npts.cc.i
+
+mesh_io_npts.s: mesh_io_npts.cc.s
+
+.PHONY : mesh_io_npts.s
+
+# target to generate assembly for a file
+mesh_io_npts.cc.s:
+	cd /Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/cmake-build-debug && $(MAKE) -f core/CMakeFiles/core.dir/build.make core/CMakeFiles/core.dir/mesh_io_npts.cc.s
+.PHONY : mesh_io_npts.cc.s
+
+mesh_io_obj.o: mesh_io_obj.cc.o
+
+.PHONY : mesh_io_obj.o
+
+# target to build an object file
+mesh_io_obj.cc.o:
+	cd /Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/cmake-build-debug && $(MAKE) -f core/CMakeFiles/core.dir/build.make core/CMakeFiles/core.dir/mesh_io_obj.cc.o
+.PHONY : mesh_io_obj.cc.o
+
+mesh_io_obj.i: mesh_io_obj.cc.i
+
+.PHONY : mesh_io_obj.i
+
+# target to preprocess a source file
+mesh_io_obj.cc.i:
+	cd /Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/cmake-build-debug && $(MAKE) -f core/CMakeFiles/core.dir/build.make core/CMakeFiles/core.dir/mesh_io_obj.cc.i
+.PHONY : mesh_io_obj.cc.i
+
+mesh_io_obj.s: mesh_io_obj.cc.s
+
+.PHONY : mesh_io_obj.s
+
+# target to generate assembly for a file
+mesh_io_obj.cc.s:
+	cd /Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/cmake-build-debug && $(MAKE) -f core/CMakeFiles/core.dir/build.make core/CMakeFiles/core.dir/mesh_io_obj.cc.s
+.PHONY : mesh_io_obj.cc.s
+
+mesh_io_off.o: mesh_io_off.cc.o
+
+.PHONY : mesh_io_off.o
+
+# target to build an object file
+mesh_io_off.cc.o:
+	cd /Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/cmake-build-debug && $(MAKE) -f core/CMakeFiles/core.dir/build.make core/CMakeFiles/core.dir/mesh_io_off.cc.o
+.PHONY : mesh_io_off.cc.o
+
+mesh_io_off.i: mesh_io_off.cc.i
+
+.PHONY : mesh_io_off.i
+
+# target to preprocess a source file
+mesh_io_off.cc.i:
+	cd /Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/cmake-build-debug && $(MAKE) -f core/CMakeFiles/core.dir/build.make core/CMakeFiles/core.dir/mesh_io_off.cc.i
+.PHONY : mesh_io_off.cc.i
+
+mesh_io_off.s: mesh_io_off.cc.s
+
+.PHONY : mesh_io_off.s
+
+# target to generate assembly for a file
+mesh_io_off.cc.s:
+	cd /Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/cmake-build-debug && $(MAKE) -f core/CMakeFiles/core.dir/build.make core/CMakeFiles/core.dir/mesh_io_off.cc.s
+.PHONY : mesh_io_off.cc.s
+
+mesh_io_pbrt.o: mesh_io_pbrt.cc.o
+
+.PHONY : mesh_io_pbrt.o
+
+# target to build an object file
+mesh_io_pbrt.cc.o:
+	cd /Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/cmake-build-debug && $(MAKE) -f core/CMakeFiles/core.dir/build.make core/CMakeFiles/core.dir/mesh_io_pbrt.cc.o
+.PHONY : mesh_io_pbrt.cc.o
+
+mesh_io_pbrt.i: mesh_io_pbrt.cc.i
+
+.PHONY : mesh_io_pbrt.i
+
+# target to preprocess a source file
+mesh_io_pbrt.cc.i:
+	cd /Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/cmake-build-debug && $(MAKE) -f core/CMakeFiles/core.dir/build.make core/CMakeFiles/core.dir/mesh_io_pbrt.cc.i
+.PHONY : mesh_io_pbrt.cc.i
+
+mesh_io_pbrt.s: mesh_io_pbrt.cc.s
+
+.PHONY : mesh_io_pbrt.s
+
+# target to generate assembly for a file
+mesh_io_pbrt.cc.s:
+	cd /Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/cmake-build-debug && $(MAKE) -f core/CMakeFiles/core.dir/build.make core/CMakeFiles/core.dir/mesh_io_pbrt.cc.s
+.PHONY : mesh_io_pbrt.cc.s
+
+mesh_io_ply.o: mesh_io_ply.cc.o
+
+.PHONY : mesh_io_ply.o
+
+# target to build an object file
+mesh_io_ply.cc.o:
+	cd /Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/cmake-build-debug && $(MAKE) -f core/CMakeFiles/core.dir/build.make core/CMakeFiles/core.dir/mesh_io_ply.cc.o
+.PHONY : mesh_io_ply.cc.o
+
+mesh_io_ply.i: mesh_io_ply.cc.i
+
+.PHONY : mesh_io_ply.i
+
+# target to preprocess a source file
+mesh_io_ply.cc.i:
+	cd /Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/cmake-build-debug && $(MAKE) -f core/CMakeFiles/core.dir/build.make core/CMakeFiles/core.dir/mesh_io_ply.cc.i
+.PHONY : mesh_io_ply.cc.i
+
+mesh_io_ply.s: mesh_io_ply.cc.s
+
+.PHONY : mesh_io_ply.s
+
+# target to generate assembly for a file
+mesh_io_ply.cc.s:
+	cd /Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/cmake-build-debug && $(MAKE) -f core/CMakeFiles/core.dir/build.make core/CMakeFiles/core.dir/mesh_io_ply.cc.s
+.PHONY : mesh_io_ply.cc.s
+
+mesh_io_smf.o: mesh_io_smf.cc.o
+
+.PHONY : mesh_io_smf.o
+
+# target to build an object file
+mesh_io_smf.cc.o:
+	cd /Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/cmake-build-debug && $(MAKE) -f core/CMakeFiles/core.dir/build.make core/CMakeFiles/core.dir/mesh_io_smf.cc.o
+.PHONY : mesh_io_smf.cc.o
+
+mesh_io_smf.i: mesh_io_smf.cc.i
+
+.PHONY : mesh_io_smf.i
+
+# target to preprocess a source file
+mesh_io_smf.cc.i:
+	cd /Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/cmake-build-debug && $(MAKE) -f core/CMakeFiles/core.dir/build.make core/CMakeFiles/core.dir/mesh_io_smf.cc.i
+.PHONY : mesh_io_smf.cc.i
+
+mesh_io_smf.s: mesh_io_smf.cc.s
+
+.PHONY : mesh_io_smf.s
+
+# target to generate assembly for a file
+mesh_io_smf.cc.s:
+	cd /Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/cmake-build-debug && $(MAKE) -f core/CMakeFiles/core.dir/build.make core/CMakeFiles/core.dir/mesh_io_smf.cc.s
+.PHONY : mesh_io_smf.cc.s
+
+mesh_tools.o: mesh_tools.cc.o
+
+.PHONY : mesh_tools.o
+
+# target to build an object file
+mesh_tools.cc.o:
+	cd /Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/cmake-build-debug && $(MAKE) -f core/CMakeFiles/core.dir/build.make core/CMakeFiles/core.dir/mesh_tools.cc.o
+.PHONY : mesh_tools.cc.o
+
+mesh_tools.i: mesh_tools.cc.i
+
+.PHONY : mesh_tools.i
+
+# target to preprocess a source file
+mesh_tools.cc.i:
+	cd /Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/cmake-build-debug && $(MAKE) -f core/CMakeFiles/core.dir/build.make core/CMakeFiles/core.dir/mesh_tools.cc.i
+.PHONY : mesh_tools.cc.i
+
+mesh_tools.s: mesh_tools.cc.s
+
+.PHONY : mesh_tools.s
+
+# target to generate assembly for a file
+mesh_tools.cc.s:
+	cd /Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/cmake-build-debug && $(MAKE) -f core/CMakeFiles/core.dir/build.make core/CMakeFiles/core.dir/mesh_tools.cc.s
+.PHONY : mesh_tools.cc.s
+
 scene.o: scene.cc.o
 
 .PHONY : scene.o
@@ -359,6 +656,9 @@ help:
 	@echo "... camera.o"
 	@echo "... camera.i"
 	@echo "... camera.s"
+	@echo "... depthmap.o"
+	@echo "... depthmap.i"
+	@echo "... depthmap.s"
 	@echo "... image_exif.o"
 	@echo "... image_exif.i"
 	@echo "... image_exif.s"
@@ -368,6 +668,36 @@ help:
 	@echo "... image_tools.o"
 	@echo "... image_tools.i"
 	@echo "... image_tools.s"
+	@echo "... mesh.o"
+	@echo "... mesh.i"
+	@echo "... mesh.s"
+	@echo "... mesh_info.o"
+	@echo "... mesh_info.i"
+	@echo "... mesh_info.s"
+	@echo "... mesh_io.o"
+	@echo "... mesh_io.i"
+	@echo "... mesh_io.s"
+	@echo "... mesh_io_npts.o"
+	@echo "... mesh_io_npts.i"
+	@echo "... mesh_io_npts.s"
+	@echo "... mesh_io_obj.o"
+	@echo "... mesh_io_obj.i"
+	@echo "... mesh_io_obj.s"
+	@echo "... mesh_io_off.o"
+	@echo "... mesh_io_off.i"
+	@echo "... mesh_io_off.s"
+	@echo "... mesh_io_pbrt.o"
+	@echo "... mesh_io_pbrt.i"
+	@echo "... mesh_io_pbrt.s"
+	@echo "... mesh_io_ply.o"
+	@echo "... mesh_io_ply.i"
+	@echo "... mesh_io_ply.s"
+	@echo "... mesh_io_smf.o"
+	@echo "... mesh_io_smf.i"
+	@echo "... mesh_io_smf.s"
+	@echo "... mesh_tools.o"
+	@echo "... mesh_tools.i"
+	@echo "... mesh_tools.s"
 	@echo "... scene.o"
 	@echo "... scene.i"
 	@echo "... scene.s"

@@ -2,13 +2,6 @@
 PNG found: /usr/local/lib/libpng.dylib;/usr/lib/libz.dylib
 JPEG found: /usr/local/lib/libjpeg.dylib
 TIFF found: /usr/local/lib/libtiff.dylib
-CMake Error at examples/CMakeLists.txt:5 (add_subdirectory):
-  The source directory
-
-    /Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/examples/task5
-
-  does not contain a CMakeLists.txt file.
-
-
--- Configuring incomplete, errors occurred!
-See also "/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/cmake-build-debug/CMakeFiles/CMakeOutput.log".
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/cmake-build-debug

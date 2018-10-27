@@ -88,7 +88,7 @@ public:
      * image size w and h are then computed as follows:
      *
      * For w > h:  x' = x * w  and  y' = y * w - (w - h) / 2.
-     * For h > w:  x' = x * h - (h - w) / 2  and  y' = y * h.
+     * For h > w:  x' = x * h - (h - w) / 2  and  y' = y * h. //@frankszn这个公式怎么推的？
      */
     void fill_calibration (float* mat, float width, float height) const;
 

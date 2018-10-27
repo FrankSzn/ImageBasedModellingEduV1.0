@@ -5,7 +5,7 @@
       <Option title="ImageBasedModellingEdu" />
       <Option makefile_is_custom="1" />
       <Option compiler="gcc" />
-      <Option virtualFolders="CMake Files\;CMake Files\core\;CMake Files\util\;CMake Files\features\;CMake Files\sfm\;CMake Files\examples\;CMake Files\examples\task1\;CMake Files\examples\task2\;CMake Files\examples\task3\;CMake Files\examples\task4\;" />
+      <Option virtualFolders="CMake Files\;CMake Files\core\;CMake Files\util\;CMake Files\features\;CMake Files\sfm\;CMake Files\mvs\;CMake Files\examples\;CMake Files\examples\task1\;CMake Files\examples\task2\;CMake Files\examples\task3\;CMake Files\examples\task4\;CMake Files\examples\task5\;" />
       <Build>
       <Target title="all">
          <Option working_dir="/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/cmake-build-debug" />
@@ -219,6 +219,52 @@
             <CompileFile command="/usr/bin/make -f &quot;/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/cmake-build-debug/sfm/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
             <Clean command="/usr/bin/make -f &quot;/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/cmake-build-debug/sfm/Makefile&quot;  VERBOSE=1 clean" />
             <DistClean command="/usr/bin/make -f &quot;/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/cmake-build-debug/sfm/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="mvs">
+         <Option output="/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/cmake-build-debug/mvs/libmvs.a" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/cmake-build-debug/mvs" />
+         <Option object_output="./" />
+         <Option type="2" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1" />
+            <Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.3.0/include" />
+            <Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include" />
+            <Add directory="/Library/Frameworks" />
+            <Add directory="/System/Library/Frameworks" />
+            <Add directory="/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/mvs/.." />
+            <Add directory="/usr/include" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/cmake-build-debug/mvs/Makefile&quot;  VERBOSE=1 mvs" />
+            <CompileFile command="/usr/bin/make -f &quot;/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/cmake-build-debug/mvs/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/cmake-build-debug/mvs/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/cmake-build-debug/mvs/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="mvs/fast">
+         <Option output="/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/cmake-build-debug/mvs/libmvs.a" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/cmake-build-debug/mvs" />
+         <Option object_output="./" />
+         <Option type="2" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1" />
+            <Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.3.0/include" />
+            <Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include" />
+            <Add directory="/Library/Frameworks" />
+            <Add directory="/System/Library/Frameworks" />
+            <Add directory="/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/mvs/.." />
+            <Add directory="/usr/include" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/cmake-build-debug/mvs/Makefile&quot;  VERBOSE=1 mvs/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/cmake-build-debug/mvs/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/cmake-build-debug/mvs/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/cmake-build-debug/mvs/Makefile&quot;  VERBOSE=1 clean" />
          </MakeCommands>
       </Target>
       <Target title="task1_test_matching">
@@ -819,6 +865,190 @@
             <DistClean command="/usr/bin/make -f &quot;/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/cmake-build-debug/examples/task4/Makefile&quot;  VERBOSE=1 clean" />
          </MakeCommands>
       </Target>
+      <Target title="class5_scene2pset_single_view">
+         <Option output="/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/cmake-build-debug/examples/task5/class5_scene2pset_single_view" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/cmake-build-debug/examples/task5" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1" />
+            <Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.3.0/include" />
+            <Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include" />
+            <Add directory="/Library/Frameworks" />
+            <Add directory="/System/Library/Frameworks" />
+            <Add directory="/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/examples/task5/../.." />
+            <Add directory="/usr/include" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/cmake-build-debug/examples/task5/Makefile&quot;  VERBOSE=1 class5_scene2pset_single_view" />
+            <CompileFile command="/usr/bin/make -f &quot;/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/cmake-build-debug/examples/task5/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/cmake-build-debug/examples/task5/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/cmake-build-debug/examples/task5/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="class5_scene2pset_single_view/fast">
+         <Option output="/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/cmake-build-debug/examples/task5/class5_scene2pset_single_view" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/cmake-build-debug/examples/task5" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1" />
+            <Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.3.0/include" />
+            <Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include" />
+            <Add directory="/Library/Frameworks" />
+            <Add directory="/System/Library/Frameworks" />
+            <Add directory="/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/examples/task5/../.." />
+            <Add directory="/usr/include" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/cmake-build-debug/examples/task5/Makefile&quot;  VERBOSE=1 class5_scene2pset_single_view/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/cmake-build-debug/examples/task5/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/cmake-build-debug/examples/task5/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/cmake-build-debug/examples/task5/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="task5_dmrecon_multi_views">
+         <Option output="/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/cmake-build-debug/examples/task5/task5_dmrecon_multi_views" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/cmake-build-debug/examples/task5" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1" />
+            <Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.3.0/include" />
+            <Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include" />
+            <Add directory="/Library/Frameworks" />
+            <Add directory="/System/Library/Frameworks" />
+            <Add directory="/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/examples/task5/../.." />
+            <Add directory="/usr/include" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/cmake-build-debug/examples/task5/Makefile&quot;  VERBOSE=1 task5_dmrecon_multi_views" />
+            <CompileFile command="/usr/bin/make -f &quot;/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/cmake-build-debug/examples/task5/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/cmake-build-debug/examples/task5/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/cmake-build-debug/examples/task5/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="task5_dmrecon_multi_views/fast">
+         <Option output="/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/cmake-build-debug/examples/task5/task5_dmrecon_multi_views" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/cmake-build-debug/examples/task5" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1" />
+            <Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.3.0/include" />
+            <Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include" />
+            <Add directory="/Library/Frameworks" />
+            <Add directory="/System/Library/Frameworks" />
+            <Add directory="/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/examples/task5/../.." />
+            <Add directory="/usr/include" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/cmake-build-debug/examples/task5/Makefile&quot;  VERBOSE=1 task5_dmrecon_multi_views/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/cmake-build-debug/examples/task5/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/cmake-build-debug/examples/task5/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/cmake-build-debug/examples/task5/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="class5_scene2pset_multi_views">
+         <Option output="/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/cmake-build-debug/examples/task5/class5_scene2pset_multi_views" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/cmake-build-debug/examples/task5" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1" />
+            <Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.3.0/include" />
+            <Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include" />
+            <Add directory="/Library/Frameworks" />
+            <Add directory="/System/Library/Frameworks" />
+            <Add directory="/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/examples/task5/../.." />
+            <Add directory="/usr/include" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/cmake-build-debug/examples/task5/Makefile&quot;  VERBOSE=1 class5_scene2pset_multi_views" />
+            <CompileFile command="/usr/bin/make -f &quot;/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/cmake-build-debug/examples/task5/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/cmake-build-debug/examples/task5/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/cmake-build-debug/examples/task5/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="class5_scene2pset_multi_views/fast">
+         <Option output="/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/cmake-build-debug/examples/task5/class5_scene2pset_multi_views" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/cmake-build-debug/examples/task5" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1" />
+            <Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.3.0/include" />
+            <Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include" />
+            <Add directory="/Library/Frameworks" />
+            <Add directory="/System/Library/Frameworks" />
+            <Add directory="/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/examples/task5/../.." />
+            <Add directory="/usr/include" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/cmake-build-debug/examples/task5/Makefile&quot;  VERBOSE=1 class5_scene2pset_multi_views/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/cmake-build-debug/examples/task5/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/cmake-build-debug/examples/task5/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/cmake-build-debug/examples/task5/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="task5_dmrecon_single_view">
+         <Option output="/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/cmake-build-debug/examples/task5/task5_dmrecon_single_view" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/cmake-build-debug/examples/task5" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1" />
+            <Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.3.0/include" />
+            <Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include" />
+            <Add directory="/Library/Frameworks" />
+            <Add directory="/System/Library/Frameworks" />
+            <Add directory="/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/examples/task5/../.." />
+            <Add directory="/usr/include" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/cmake-build-debug/examples/task5/Makefile&quot;  VERBOSE=1 task5_dmrecon_single_view" />
+            <CompileFile command="/usr/bin/make -f &quot;/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/cmake-build-debug/examples/task5/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/cmake-build-debug/examples/task5/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/cmake-build-debug/examples/task5/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="task5_dmrecon_single_view/fast">
+         <Option output="/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/cmake-build-debug/examples/task5/task5_dmrecon_single_view" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/cmake-build-debug/examples/task5" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1" />
+            <Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.3.0/include" />
+            <Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include" />
+            <Add directory="/Library/Frameworks" />
+            <Add directory="/System/Library/Frameworks" />
+            <Add directory="/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/examples/task5/../.." />
+            <Add directory="/usr/include" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/cmake-build-debug/examples/task5/Makefile&quot;  VERBOSE=1 task5_dmrecon_single_view/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/cmake-build-debug/examples/task5/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/cmake-build-debug/examples/task5/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/cmake-build-debug/examples/task5/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
       </Build>
       <Unit filename="/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/core/bundle.cc">
          <Option target="core"/>
@@ -839,6 +1069,12 @@
          <Option target="core"/>
       </Unit>
       <Unit filename="/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/core/defines.h">
+         <Option target="core"/>
+      </Unit>
+      <Unit filename="/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/core/depthmap.cc">
+         <Option target="core"/>
+      </Unit>
+      <Unit filename="/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/core/depthmap.h">
          <Option target="core"/>
       </Unit>
       <Unit filename="/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/core/image.h">
@@ -869,6 +1105,66 @@
          <Option target="core"/>
       </Unit>
       <Unit filename="/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/core/image_tools.h">
+         <Option target="core"/>
+      </Unit>
+      <Unit filename="/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/core/mesh.cc">
+         <Option target="core"/>
+      </Unit>
+      <Unit filename="/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/core/mesh.h">
+         <Option target="core"/>
+      </Unit>
+      <Unit filename="/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/core/mesh_info.cc">
+         <Option target="core"/>
+      </Unit>
+      <Unit filename="/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/core/mesh_info.h">
+         <Option target="core"/>
+      </Unit>
+      <Unit filename="/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/core/mesh_io.cc">
+         <Option target="core"/>
+      </Unit>
+      <Unit filename="/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/core/mesh_io.h">
+         <Option target="core"/>
+      </Unit>
+      <Unit filename="/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/core/mesh_io_npts.cc">
+         <Option target="core"/>
+      </Unit>
+      <Unit filename="/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/core/mesh_io_npts.h">
+         <Option target="core"/>
+      </Unit>
+      <Unit filename="/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/core/mesh_io_obj.cc">
+         <Option target="core"/>
+      </Unit>
+      <Unit filename="/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/core/mesh_io_obj.h">
+         <Option target="core"/>
+      </Unit>
+      <Unit filename="/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/core/mesh_io_off.cc">
+         <Option target="core"/>
+      </Unit>
+      <Unit filename="/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/core/mesh_io_off.h">
+         <Option target="core"/>
+      </Unit>
+      <Unit filename="/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/core/mesh_io_pbrt.cc">
+         <Option target="core"/>
+      </Unit>
+      <Unit filename="/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/core/mesh_io_pbrt.h">
+         <Option target="core"/>
+      </Unit>
+      <Unit filename="/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/core/mesh_io_ply.cc">
+         <Option target="core"/>
+      </Unit>
+      <Unit filename="/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/core/mesh_io_ply.h">
+         <Option target="core"/>
+      </Unit>
+      <Unit filename="/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/core/mesh_io_smf.cc">
+         <Option target="core"/>
+      </Unit>
+      <Unit filename="/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/core/mesh_io_smf.h">
+         <Option target="core"/>
+      </Unit>
+      <Unit filename="/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/core/mesh_tools.cc">
+         <Option target="core"/>
+      </Unit>
+      <Unit filename="/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/core/mesh_tools.h">
          <Option target="core"/>
       </Unit>
       <Unit filename="/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/core/scene.cc">
@@ -939,6 +1235,18 @@
       <Unit filename="/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/examples/task4/functions.h">
          <Option target="task4_incremental_sfm"/>
       </Unit>
+      <Unit filename="/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/examples/task5/class5_dmrecon_multi_views.cc">
+         <Option target="task5_dmrecon_multi_views"/>
+      </Unit>
+      <Unit filename="/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/examples/task5/class5_dmrecon_single_view.cc">
+         <Option target="task5_dmrecon_single_view"/>
+      </Unit>
+      <Unit filename="/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/examples/task5/class5_scene2pset_multi_views.cc">
+         <Option target="class5_scene2pset_multi_views"/>
+      </Unit>
+      <Unit filename="/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/examples/task5/class5_scene2pset_single_view.cc">
+         <Option target="class5_scene2pset_single_view"/>
+      </Unit>
       <Unit filename="/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/features/cascade_hashing.cc">
          <Option target="features"/>
       </Unit>
@@ -977,6 +1285,66 @@
       </Unit>
       <Unit filename="/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/features/surf.h">
          <Option target="features"/>
+      </Unit>
+      <Unit filename="/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/mvs/defines.h">
+         <Option target="mvs"/>
+      </Unit>
+      <Unit filename="/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/mvs/dmrecon.cc">
+         <Option target="mvs"/>
+      </Unit>
+      <Unit filename="/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/mvs/dmrecon.h">
+         <Option target="mvs"/>
+      </Unit>
+      <Unit filename="/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/mvs/global_view_selection.cc">
+         <Option target="mvs"/>
+      </Unit>
+      <Unit filename="/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/mvs/global_view_selection.h">
+         <Option target="mvs"/>
+      </Unit>
+      <Unit filename="/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/mvs/image_pyramid.cc">
+         <Option target="mvs"/>
+      </Unit>
+      <Unit filename="/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/mvs/image_pyramid.h">
+         <Option target="mvs"/>
+      </Unit>
+      <Unit filename="/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/mvs/local_view_selection.cc">
+         <Option target="mvs"/>
+      </Unit>
+      <Unit filename="/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/mvs/local_view_selection.h">
+         <Option target="mvs"/>
+      </Unit>
+      <Unit filename="/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/mvs/mvs_tools.cc">
+         <Option target="mvs"/>
+      </Unit>
+      <Unit filename="/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/mvs/mvs_tools.h">
+         <Option target="mvs"/>
+      </Unit>
+      <Unit filename="/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/mvs/patch_optimization.cc">
+         <Option target="mvs"/>
+      </Unit>
+      <Unit filename="/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/mvs/patch_optimization.h">
+         <Option target="mvs"/>
+      </Unit>
+      <Unit filename="/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/mvs/patch_sampler.cc">
+         <Option target="mvs"/>
+      </Unit>
+      <Unit filename="/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/mvs/patch_sampler.h">
+         <Option target="mvs"/>
+      </Unit>
+      <Unit filename="/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/mvs/progress.h">
+         <Option target="mvs"/>
+      </Unit>
+      <Unit filename="/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/mvs/settings.h">
+         <Option target="mvs"/>
+      </Unit>
+      <Unit filename="/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/mvs/single_view.cc">
+         <Option target="mvs"/>
+      </Unit>
+      <Unit filename="/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/mvs/single_view.h">
+         <Option target="mvs"/>
+      </Unit>
+      <Unit filename="/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/mvs/view_selection.h">
+         <Option target="mvs"/>
       </Unit>
       <Unit filename="/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/sfm/ba_cholesky.h">
          <Option target="sfm"/>
@@ -1197,6 +1565,12 @@
       <Unit filename="/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/sfm/CMakeLists.txt">
           <Option virtualFolder="CMake Files\sfm\" />
       </Unit>
+      <Unit filename="/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/mvs/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\mvs\" />
+      </Unit>
+      <Unit filename="/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/mvs/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\mvs\" />
+      </Unit>
       <Unit filename="/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/examples/CMakeLists.txt">
           <Option virtualFolder="CMake Files\examples\" />
       </Unit>
@@ -1223,6 +1597,12 @@
       </Unit>
       <Unit filename="/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/examples/task4/CMakeLists.txt">
           <Option virtualFolder="CMake Files\examples\task4\" />
+      </Unit>
+      <Unit filename="/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/examples/task5/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\examples\task5\" />
+      </Unit>
+      <Unit filename="/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/examples/task5/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\examples\task5\" />
       </Unit>
    </Project>
 </CodeBlocks_project_file>

@@ -5,7 +5,7 @@
       <Option title="class4" />
       <Option makefile_is_custom="1" />
       <Option compiler="gcc" />
-      <Option virtualFolders="CMake Files\;CMake Files\core\;CMake Files\util\;CMake Files\features\;CMake Files\sfm\;CMake Files\examples\;CMake Files\examples\task1\;CMake Files\examples\task2\;CMake Files\examples\task3\;CMake Files\examples\task4\;" />
+      <Option virtualFolders="CMake Files\;CMake Files\core\;CMake Files\util\;CMake Files\features\;CMake Files\sfm\;CMake Files\mvs\;CMake Files\examples\;CMake Files\examples\task1\;CMake Files\examples\task2\;CMake Files\examples\task3\;CMake Files\examples\task4\;CMake Files\examples\task5\;" />
       <Build>
       <Target title="all">
          <Option working_dir="/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/cmake-build-debug/examples/task4" />
@@ -103,6 +103,12 @@
       <Unit filename="/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/sfm/CMakeLists.txt">
           <Option virtualFolder="CMake Files\sfm\" />
       </Unit>
+      <Unit filename="/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/mvs/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\mvs\" />
+      </Unit>
+      <Unit filename="/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/mvs/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\mvs\" />
+      </Unit>
       <Unit filename="/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/examples/CMakeLists.txt">
           <Option virtualFolder="CMake Files\examples\" />
       </Unit>
@@ -129,6 +135,12 @@
       </Unit>
       <Unit filename="/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/examples/task4/CMakeLists.txt">
           <Option virtualFolder="CMake Files\examples\task4\" />
+      </Unit>
+      <Unit filename="/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/examples/task5/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\examples\task5\" />
+      </Unit>
+      <Unit filename="/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/examples/task5/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\examples\task5\" />
       </Unit>
    </Project>
 </CodeBlocks_project_file>

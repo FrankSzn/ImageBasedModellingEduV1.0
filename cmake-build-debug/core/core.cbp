@@ -5,7 +5,7 @@
       <Option title="core" />
       <Option makefile_is_custom="1" />
       <Option compiler="gcc" />
-      <Option virtualFolders="CMake Files\;CMake Files\core\;CMake Files\util\;CMake Files\features\;CMake Files\sfm\;CMake Files\examples\;CMake Files\examples\task1\;CMake Files\examples\task2\;CMake Files\examples\task3\;CMake Files\examples\task4\;" />
+      <Option virtualFolders="CMake Files\;CMake Files\core\;CMake Files\util\;CMake Files\features\;CMake Files\sfm\;CMake Files\mvs\;CMake Files\examples\;CMake Files\examples\task1\;CMake Files\examples\task2\;CMake Files\examples\task3\;CMake Files\examples\task4\;CMake Files\examples\task5\;" />
       <Build>
       <Target title="all">
          <Option working_dir="/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/cmake-build-debug/core" />
@@ -85,6 +85,12 @@
       <Unit filename="/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/core/defines.h">
          <Option target="core"/>
       </Unit>
+      <Unit filename="/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/core/depthmap.cc">
+         <Option target="core"/>
+      </Unit>
+      <Unit filename="/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/core/depthmap.h">
+         <Option target="core"/>
+      </Unit>
       <Unit filename="/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/core/image.h">
          <Option target="core"/>
       </Unit>
@@ -113,6 +119,66 @@
          <Option target="core"/>
       </Unit>
       <Unit filename="/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/core/image_tools.h">
+         <Option target="core"/>
+      </Unit>
+      <Unit filename="/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/core/mesh.cc">
+         <Option target="core"/>
+      </Unit>
+      <Unit filename="/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/core/mesh.h">
+         <Option target="core"/>
+      </Unit>
+      <Unit filename="/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/core/mesh_info.cc">
+         <Option target="core"/>
+      </Unit>
+      <Unit filename="/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/core/mesh_info.h">
+         <Option target="core"/>
+      </Unit>
+      <Unit filename="/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/core/mesh_io.cc">
+         <Option target="core"/>
+      </Unit>
+      <Unit filename="/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/core/mesh_io.h">
+         <Option target="core"/>
+      </Unit>
+      <Unit filename="/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/core/mesh_io_npts.cc">
+         <Option target="core"/>
+      </Unit>
+      <Unit filename="/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/core/mesh_io_npts.h">
+         <Option target="core"/>
+      </Unit>
+      <Unit filename="/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/core/mesh_io_obj.cc">
+         <Option target="core"/>
+      </Unit>
+      <Unit filename="/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/core/mesh_io_obj.h">
+         <Option target="core"/>
+      </Unit>
+      <Unit filename="/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/core/mesh_io_off.cc">
+         <Option target="core"/>
+      </Unit>
+      <Unit filename="/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/core/mesh_io_off.h">
+         <Option target="core"/>
+      </Unit>
+      <Unit filename="/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/core/mesh_io_pbrt.cc">
+         <Option target="core"/>
+      </Unit>
+      <Unit filename="/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/core/mesh_io_pbrt.h">
+         <Option target="core"/>
+      </Unit>
+      <Unit filename="/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/core/mesh_io_ply.cc">
+         <Option target="core"/>
+      </Unit>
+      <Unit filename="/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/core/mesh_io_ply.h">
+         <Option target="core"/>
+      </Unit>
+      <Unit filename="/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/core/mesh_io_smf.cc">
+         <Option target="core"/>
+      </Unit>
+      <Unit filename="/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/core/mesh_io_smf.h">
+         <Option target="core"/>
+      </Unit>
+      <Unit filename="/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/core/mesh_tools.cc">
+         <Option target="core"/>
+      </Unit>
+      <Unit filename="/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/core/mesh_tools.h">
          <Option target="core"/>
       </Unit>
       <Unit filename="/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/core/scene.cc">
@@ -154,6 +220,12 @@
       <Unit filename="/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/sfm/CMakeLists.txt">
           <Option virtualFolder="CMake Files\sfm\" />
       </Unit>
+      <Unit filename="/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/mvs/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\mvs\" />
+      </Unit>
+      <Unit filename="/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/mvs/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\mvs\" />
+      </Unit>
       <Unit filename="/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/examples/CMakeLists.txt">
           <Option virtualFolder="CMake Files\examples\" />
       </Unit>
@@ -180,6 +252,12 @@
       </Unit>
       <Unit filename="/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/examples/task4/CMakeLists.txt">
           <Option virtualFolder="CMake Files\examples\task4\" />
+      </Unit>
+      <Unit filename="/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/examples/task5/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\examples\task5\" />
+      </Unit>
+      <Unit filename="/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/examples/task5/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\examples\task5\" />
       </Unit>
    </Project>
 </CodeBlocks_project_file>
