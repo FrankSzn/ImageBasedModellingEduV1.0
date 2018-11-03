@@ -44,3 +44,9 @@
 /Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/cmake-build-debug/examples/task5/CMakeFiles/edit_cache.dir
 /Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/cmake-build-debug/examples/task5/CMakeFiles/class5_scene2pset_multi_views.dir
 /Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/cmake-build-debug/examples/task5/CMakeFiles/task5_dmrecon_single_view.dir
+/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/cmake-build-debug/examples/task6/CMakeFiles/edit_cache.dir
+/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/cmake-build-debug/examples/task6/CMakeFiles/rebuild_cache.dir
+/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/cmake-build-debug/examples/task6/CMakeFiles/task6_surface_reconstruction.dir
+/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/cmake-build-debug/surface/CMakeFiles/edit_cache.dir
+/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/cmake-build-debug/surface/CMakeFiles/rebuild_cache.dir
+/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/cmake-build-debug/surface/CMakeFiles/surface.dir

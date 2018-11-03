@@ -396,6 +396,32 @@ task5_dmrecon_single_view/fast:
 	$(MAKE) -f examples/task5/CMakeFiles/task5_dmrecon_single_view.dir/build.make examples/task5/CMakeFiles/task5_dmrecon_single_view.dir/build
 .PHONY : task5_dmrecon_single_view/fast
 
+#=============================================================================
+# Target rules for targets named task6_surface_reconstruction
+
+# Build rule for target.
+task6_surface_reconstruction: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 task6_surface_reconstruction
+.PHONY : task6_surface_reconstruction
+
+# fast build rule for target.
+task6_surface_reconstruction/fast:
+	$(MAKE) -f examples/task6/CMakeFiles/task6_surface_reconstruction.dir/build.make examples/task6/CMakeFiles/task6_surface_reconstruction.dir/build
+.PHONY : task6_surface_reconstruction/fast
+
+#=============================================================================
+# Target rules for targets named surface
+
+# Build rule for target.
+surface: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 surface
+.PHONY : surface
+
+# fast build rule for target.
+surface/fast:
+	$(MAKE) -f surface/CMakeFiles/surface.dir/build.make surface/CMakeFiles/surface.dir/build
+.PHONY : surface/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -426,6 +452,8 @@ help:
 	@echo "... task5_dmrecon_multi_views"
 	@echo "... class5_scene2pset_multi_views"
 	@echo "... task5_dmrecon_single_view"
+	@echo "... task6_surface_reconstruction"
+	@echo "... surface"
 .PHONY : help
 
 

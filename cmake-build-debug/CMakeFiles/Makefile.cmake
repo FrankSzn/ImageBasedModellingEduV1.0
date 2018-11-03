@@ -18,9 +18,11 @@ set(CMAKE_MAKEFILE_DEPENDS
   "../examples/task3/CMakeLists.txt"
   "../examples/task4/CMakeLists.txt"
   "../examples/task5/CMakeLists.txt"
+  "../examples/task6/CMakeLists.txt"
   "../features/CMakeLists.txt"
   "../mvs/CMakeLists.txt"
   "../sfm/CMakeLists.txt"
+  "../surface/CMakeLists.txt"
   "../util/CMakeLists.txt"
   "/usr/local/Cellar/cmake/3.5.0/share/cmake/Modules/CMakeCInformation.cmake"
   "/usr/local/Cellar/cmake/3.5.0/share/cmake/Modules/CMakeCXXInformation.cmake"
@@ -73,6 +75,8 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "examples/task3/CMakeFiles/CMakeDirectoryInformation.cmake"
   "examples/task4/CMakeFiles/CMakeDirectoryInformation.cmake"
   "examples/task5/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "examples/task6/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "surface/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
@@ -99,4 +103,6 @@ set(CMAKE_DEPEND_INFO_FILES
   "examples/task5/CMakeFiles/task5_dmrecon_multi_views.dir/DependInfo.cmake"
   "examples/task5/CMakeFiles/class5_scene2pset_multi_views.dir/DependInfo.cmake"
   "examples/task5/CMakeFiles/task5_dmrecon_single_view.dir/DependInfo.cmake"
+  "examples/task6/CMakeFiles/task6_surface_reconstruction.dir/DependInfo.cmake"
+  "surface/CMakeFiles/surface.dir/DependInfo.cmake"
   )

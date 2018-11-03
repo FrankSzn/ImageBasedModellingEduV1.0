@@ -34,6 +34,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/cmake-build-debug/examples/task3/cmake_install.cmake")
   include("/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/cmake-build-debug/examples/task4/cmake_install.cmake")
   include("/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/cmake-build-debug/examples/task5/cmake_install.cmake")
+  include("/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/cmake-build-debug/examples/task6/cmake_install.cmake")
 
 endif()
 

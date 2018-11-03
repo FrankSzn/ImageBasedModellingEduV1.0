@@ -1031,7 +1031,7 @@ blur_gaussian (typename Image<T>::ConstPtr in, float sigma)
     int const w = in->width();
     int const h = in->height();
     int const c = in->channels();
-    int const ks = std::ceil(sigma * 2.884f); // Cap kernel at 1/128
+    int const ks = std::ceil(sigma * 2.884f); // Cap kernel at 1/128 //@frankszn: unclear
     std::vector<float> kernel(ks + 1);
 
     /* Fill kernel values. */
