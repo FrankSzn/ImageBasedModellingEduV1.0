@@ -1,7 +1,27 @@
 /usr/local/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0
+-- Found Eigen: /usr/local/include/eigen3  
+-- Eigen found (include: /usr/local/include/eigen3, version: 3.3.5)
 PNG found: /usr/local/lib/libpng.dylib;/usr/lib/libz.dylib
 JPEG found: /usr/local/lib/libjpeg.dylib
 TIFF found: /usr/local/lib/libtiff.dylib
--- Configuring done
--- Generating done
--- Build files have been written to: /Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/cmake-build-debug
+-- Could NOT find TBB (missing:  TBB_LIBRARIES tbbmalloc tbbmalloc_proxy tbb_preview) (found version "4.4")
+-- Found OpenGL: /System/Library/Frameworks/OpenGL.framework  
+CMake Error at examples/task7/CMakeLists.txt:16 (find_package):
+  By not providing "FindGLFW.cmake" in CMAKE_MODULE_PATH this project has
+  asked CMake to find a package configuration file provided by "GLFW", but
+  CMake did not find one.
+
+  Could not find a package configuration file provided by "GLFW" with any of
+  the following names:
+
+    GLFWConfig.cmake
+    glfw-config.cmake
+
+  Add the installation prefix of "GLFW" to CMAKE_PREFIX_PATH or set
+  "GLFW_DIR" to a directory containing one of the above files.  If "GLFW"
+  provides a separate development package or SDK, be sure it has been
+  installed.
+
+
+-- Configuring incomplete, errors occurred!
+See also "/Users/frank_szn/Documents/Robotics/MultipleView/ImageBasedModellingEduV1.0/cmake-build-debug/CMakeFiles/CMakeOutput.log".
