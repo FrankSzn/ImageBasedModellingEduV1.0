@@ -15,23 +15,27 @@ TEX_NAMESPACE_BEGIN
 
 void
 build_adjacency_graph(core::TriangleMesh::ConstPtr mesh,
-    core::MeshInfo const & mesh_info, UniGraph * graph)  {
+    core::VertexInfoList::ConstPtr vertex_infos, UniGraph * graph)  {
 
+    // vertex indices of facets
     core::TriangleMesh::FaceList const & faces = mesh->get_faces();
+    // number of facets
     std::size_t const num_faces = faces.size() / 3;
 
     ProgressCounter face_counter("\tAdding edges", num_faces);
     for (std::size_t i = 0; i < faces.size(); i += 3) {
         face_counter.progress<SIMPLE>();
 
+        //vertex index of facets
         std::size_t v1 = faces[i];
         std::size_t v2 = faces[i + 1];
         std::size_t v3 = faces[i + 2];
 
+        // get adjacent faces by finding faces containing edges v1v2 v2v3 v3v1
         std::vector<std::size_t> adj_faces;
-        mesh_info.get_faces_for_edge(v1, v2, &adj_faces);
-        mesh_info.get_faces_for_edge(v2, v3, &adj_faces);
-        mesh_info.get_faces_for_edge(v3, v1, &adj_faces);
+        vertex_infos->get_faces_for_edge(v1, v2, &adj_faces);
+        vertex_infos->get_faces_for_edge(v2, v3, &adj_faces);
+        vertex_infos->get_faces_for_edge(v3, v1, &adj_faces);
 
         for (std::size_t j = 0; j < adj_faces.size(); ++j) {
             /* Face id vs. face position. */

@@ -13,6 +13,8 @@
 #include <math/vector.h>
 #include <Eigen/SparseCore>
 #include <Eigen/SparseLU>
+#include <core/image_io.h>
+#include <core/image_tools.h>
 
 #include "poisson_blending.h"
 
@@ -56,9 +58,13 @@ poisson_blend(core::FloatImage::ConstPtr src, core::ByteImage::ConstPtr mask,
     assert(mask->channels() == 1);
     assert(valid_mask(mask));
 
+    // number of pixels
     const int n = dest->get_pixel_amount();
+    // number of image width
     const int width = dest->width();
+    // number of image height
     const int height = dest->height();
+    // number of channels
     const int channels = dest->channels();
 
     core::Image<int>::Ptr indices = core::Image<int>::create(width, height, 1);
@@ -67,7 +73,7 @@ poisson_blend(core::FloatImage::ConstPtr src, core::ByteImage::ConstPtr mask,
     for (int i = 0; i < n; ++i) {
         if (mask->at(i) != 0) {
             indices->at(i) = index;
-            index += 1;
+            index++;
         }
     }
     const int nnz = index;
@@ -80,7 +86,7 @@ poisson_blend(core::FloatImage::ConstPtr src, core::ByteImage::ConstPtr mask,
 
     for (int i = 0; i < n; ++i) {
         const int row = indices->at(i);
-        if (mask->at(i) == 128 || mask->at(i) == 64) {
+        if (mask->at(i) == 126 || mask->at(i) == 128) {
             Eigen::Triplet<float, int> t(row, row, 1.0f);
             coefficients_A.push_back(t);
 
@@ -112,6 +118,7 @@ poisson_blend(core::FloatImage::ConstPtr src, core::ByteImage::ConstPtr mask,
             math::Vec3f l_d = simple_laplacian(i, dest);
             math::Vec3f l_s = simple_laplacian(i, src);
 
+            // mixture of gradients
             coefficients_b[row] = (alpha * l_s + (1.0f - alpha) * l_d);
         }
     }
